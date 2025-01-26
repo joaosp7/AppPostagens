@@ -1,0 +1,10 @@
+name: sistema-posts-pos
+services:
+
+  db:
+    image: postgres
+    restart: on-failure
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
